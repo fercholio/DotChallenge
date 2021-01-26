@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dot.Challenge.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,7 @@ namespace Dot.Challenge
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new LCRGameViewModel();
         }
     }
 }
